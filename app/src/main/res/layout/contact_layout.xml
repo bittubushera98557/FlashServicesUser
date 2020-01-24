@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/contact_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_weight=".2"
+                android:id="@+id/contact_info"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="MES In-Charge\n86830 86608 "
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/white" />
+        <ImageView
+            android:id="@+id/contact_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:layout_weight=".8"
+            android:gravity="center|left"
+            android:padding="7dp"
+            android:text="   MES In-Charge"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/green"
+            android:src="@drawable/contact_icon" />
+    </LinearLayout>
+</LinearLayout>

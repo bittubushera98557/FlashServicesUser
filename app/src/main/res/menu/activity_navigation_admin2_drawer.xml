@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/area_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_sub"
+            android:icon="@drawable/id_icon"
+            android:title="Add Service" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/id_icon"
+            android:title="Services" />
+        <item
+            android:id="@+id/nav_viewfeed"
+            android:icon="@drawable/id_icon"
+            android:title="View Feedback" />
+        <item
+            android:id="@+id/nav_viewvendorfeed"
+            android:icon="@drawable/id_icon"
+            android:title="View Vendor Feedback" />
+        <item
+            android:id="@+id/nav_member"
+            android:icon="@drawable/person_icon"
+            android:title="Members" />
+        <item
+            android:id="@+id/send_noti"
+            android:icon="@drawable/notification"
+            android:title="Send Notification" />
+        <item
+            android:id="@+id/view_noti"
+            android:icon="@drawable/notification"
+            android:title="View Notification" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/service_icons"
+            android:title="Logout" />
+
+    </group>
+</menu>

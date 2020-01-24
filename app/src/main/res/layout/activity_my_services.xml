@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/place_dets"
+                android:text="Select Service"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_below="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/light_grey"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:weightSum="3"
+            android:background="@color/orange"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/imag"
+                android:padding="10dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:typeface="serif"
+                android:id="@+id/title_name"
+                android:gravity="center|left"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:text="SERVICE"/>
+        </LinearLayout>
+        <ListView
+            android:layout_margin="10dp"
+            android:id="@+id/list_view"
+            android:layout_marginTop="10dp"
+            android:divider="@color/black"
+            android:dividerHeight="1dp"
+            android:layout_below="@+id/toolbars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/tv_back_fromService"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textAllCaps="true"
+android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:layout_weight="5"
+            android:typeface="serif"
+            android:textColor="@color/white"
+            android:text="Back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/become_pro_member"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:textSize="18dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@color/white"
+            android:text="Next"/>
+
+    </LinearLayout>
+</RelativeLayout>

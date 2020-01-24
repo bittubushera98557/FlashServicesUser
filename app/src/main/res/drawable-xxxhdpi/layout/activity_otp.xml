@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cardetailbg"
+    tools:context="indiawebwide.com.vehicleapp.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Receive OTP"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:id="@+id/linear_edit"
+            android:visibility="gone"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+
+            <EditText
+                android:hint="Type OTP"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:id="@+id/otp_type"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/receive_opt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET OTP"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/button"/>
+        <Button
+            android:id="@+id/submit"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:id="@+id/reset"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E5E5E5"
+            android:text="Resend OTP"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

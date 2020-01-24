@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">FlashServices</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <!-- Strings related to login -->
+    <string name="prompt_name">Name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_add1">Address1</string>
+    <string name="prompt_add2">Address2</string>
+    <string name="prompt_customer">Customer Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_state">State</string>
+    <string name="prompt_city">City/Province/Region</string>
+    <string name="prompt_post">Postal Code</string>
+    <string name="prompt_listname">List name</string>
+    <string name="prompt_country">Country</string>
+    <string name="prompt_cancel">Cancel</string>
+    <string name="prompt_create">Create</string>
+    <string name="prompt_agree">I Agree the Term of Service</string>
+    <string name="action_sign_up">LOGIN</string>
+    <string name="action_checkout">CHECK OUT</string>
+    <string name="action_listback">BACK TO LIST</string>
+    <string name="action_corder">CONFIRM ORDER</string>
+    <string name="action_sign_in">SIGN IN</string>
+    <string name="action_submit">SUBMIT</string>
+    <string name="some_string">ADD PRODUCTS</string>
+    <string name="somee_string">ORDER DETAILS</string>
+    <string name="som_string">EDIT PRODUCTS</string>
+    <string name="action_edit">UPDATE PROFILE</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_frn_nam">Friendly Name</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_invalid_address">Invalid address</string>
+    <string name="error_invalid_name">Invalid name</string>
+    <string name="error_invalid_number">Invalid phone number</string>
+    <string name="error_invalid_password">Password is too short</string>
+    <string name="error_incorrect_password">Password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="match">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_sign_up">Sign in</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text"></string>
+    <string name="city">ENTER CITY</string>
+    <string name="full">FULL ADDRESS</string>
+    <string name="ttile">DEFINE TITLE</string>
+    <string name="number">ENTER NUMBER</string>
+    <string name="about">About Property</string>
+    <string name="title_activity_navigation">Navigation</string>
+  <!--  <string name="gcm_defaultSenderId">611955549239</string>
+-->
+
+    <string name="facebook_app_id">426137771355459</string>
+    <string name="fb_login_protocol_scheme">fb426137771355459</string>
+
+    <string name="mapApi_key">AIzaSyC8jFU-yrO7rzRh4gWaMlB3L82U1gDc_3A</string>
+    <!--used last key-->
+    <!--AIzaSyB0AlQDQNwZd5GNEk9ZZCwoomXMmU_Pcn0-->
+
+
+
+<!--AIzaSyAJcfb-YA005Y6w06FP1eyrEakVK1r1dFE-->
+
+</resources>

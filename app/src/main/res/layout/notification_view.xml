@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:clickable="true"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/xx"
+        android:background="@color/white"
+        android:paddingLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Title"
+            android:layout_weight="4"
+            android:textSize="17dp"
+            android:gravity="center|left"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/title_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_below="@+id/xx"
+        android:id="@+id/lll"
+        android:paddingLeft="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+                android:text="tytrytr\n eegg"
+                android:textSize="15dp"
+                android:id="@+id/notification_message"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+            android:gravity="center|left|top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+           </LinearLayout>
+    <TextView
+        android:text="tytrytr"
+        android:textSize="15dp"
+        android:background="@color/white"
+        android:layout_below="@+id/lll"
+        android:id="@+id/notification_date"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center|right"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

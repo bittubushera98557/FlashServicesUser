@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/tabs"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Vehicle Number"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/vv_num" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Vehicle Type"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/vv_time" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/be"
+        android:layout_below="@+id/tabs"
+        android:background="@color/colorPrimaryDark"></View>
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3.5"
+    android:background="@drawable/cardetailbg"
+    tools:context="indiawebwide.com.vehicleapp.LoginActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Get Vehicle Details"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+
+                android:layout_margin="12dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="5"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:hint="Type Vehicle Number"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:inputType="textCapCharacters"
+                    android:id="@+id/editsearch"
+                    android:layout_weight="1"
+                    android:background="@drawable/box1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="GO"
+                    android:layout_weight="4"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:id="@+id/go"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/gobox"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_done"
+                android:layout_margin="12dp"
+
+                android:gravity="center_horizontal"
+                android:background="@drawable/box"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:src="@drawable/usericon"/>
+                    <TextView
+                        android:text="Vehicle Number "
+                        android:textSize="12dp"
+                        android:id="@+id/f_name"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E5E5E5"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@drawable/phoneicon"/>
+                    <TextView
+                        android:text="Vehicle Number "
+                        android:textSize="12dp"
+                        android:id="@+id/f_pnum"
+                        android:layout_weight=".8"
+                        android:gravity="left|center"
+                        android:layout_gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:id="@+id/call_me"
+                        android:layout_weight="2.2"
+                        android:src="@drawable/call_icon"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E5E5E5"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:src="@drawable/noplateicon"/>
+                    <TextView
+                        android:text="Vehicle Number "
+                        android:textSize="12dp"
+                        android:id="@+id/f_num"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E5E5E5"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:id="@+id/car_img"
+                        android:src="@drawable/carsicon"/>
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:id="@+id/bike_img"
+                        android:src="@drawable/bikelicon"/>
+                    <TextView
+                        android:text="Vehicle Number "
+                        android:textSize="12dp"
+                        android:id="@+id/type"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

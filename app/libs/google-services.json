@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "62832583664",
+    "project_id": "causal-binder-185506"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62832583664:android:d1ee73594af049fa",
+        "android_client_info": {
+          "package_name": "com.FlashScreen.flashservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62832583664-ani7qiibv5oub13de7ircp6kfq1al84s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi-VFXDtcWUiKbG7qetpFaigWoIqYeT5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/search_edit"
+        android:layout_below="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/Grey"
+        android:drawableRight="@drawable/search_ic"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textColorHighlight="@color/black"
+        android:textCursorDrawable="@color/black"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:hint="Search By Vehicle number"
+        android:id="@+id/editsearch" />
+        </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/t"
+        android:layout_below="@+id/search_edit"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Vehicle Number"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_height="40dp"
+            android:id="@+id/v_num" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Phone Number"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:layout_height="40dp"
+            android:id="@+id/v_phone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Time"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_height="40dp"
+            android:id="@+id/v_type" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/be"
+        android:layout_below="@+id/t"
+        android:background="@color/Grey"></View>
+    <ListView
+        android:layout_below="@+id/t"
+        android:id="@+id/expandableListView1"
+        android:dividerHeight="1dp"
+        android:divider="@color/Yellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="3"
+        android:background="#d3d3d3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/todaysintake"
+            android:text="Today"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

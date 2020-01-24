@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.FlashScreen.flashservice.InnnerClass.SubCategory">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+                android:id="@+id/place_dets"
+                android:text="Add SubCategory"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rectang"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <Spinner android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTint="@color/white"
+            android:textSize="18dp"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint=" Address Quarter No." />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:layout_margin="10dp">
+        <EditText android:id="@+id/input_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="  Sub Category" />
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rectangle"
+            android:layout_margin="10dp">
+            <EditText android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:drawableTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="  In Rs (Option)" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:typeface="serif"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/submit_cat"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Submit"/>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/area_icon"
+            android:title="Home Service" />
+        <item
+            android:id="@+id/register"
+            android:icon="@drawable/person_icon"
+            android:title="Register" />
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/person_icon"
+            android:title="Login" />
+      <!--  <item
+            android:id="@+id/V_register"
+            android:icon="@drawable/vendor"
+            android:title="Vendor Register" />
+        <item
+            android:id="@+id/V_login"
+            android:icon="@drawable/vendor"
+            android:title="Vendor Login" />-->
+        <item
+            android:id="@+id/vendor_SignUp"
+            android:icon="@drawable/vendor"
+            android:title="Vendor Sign up" />
+        <item
+            android:id="@+id/follow_on_social"
+            android:icon="@drawable/follow_us"
+            android:title="Follow Us" />
+
+        <item
+            android:id="@+id/social_share"
+            android:icon="@drawable/share"
+            android:title="Share App" />
+        <item
+            android:id="@+id/contactUs"
+            android:icon="@drawable/red_phone_icon"
+            android:title="Contact Us" />
+
+        <!-- <item
+             android:id="@+id/Adminlogin"
+             android:icon="@drawable/person_icon"
+             android:title="Admin Login" />-->
+    </group>
+</menu>

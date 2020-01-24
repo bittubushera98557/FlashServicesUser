@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.FlashScreen.flashservice.InnnerClass.ProfilePage">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:weightSum="2"
+               android:orientation="horizontal">
+            <TextView
+                android:id="@+id/place_dets"
+                android:layout_weight="1.2"
+                android:text="User Profile"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center|left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"/>
+               <TextView
+                   android:layout_weight=".8"
+                   android:id="@+id/recode"
+                   android:text=""
+                   android:textColor="@color/white"
+                   android:textSize="15dp"
+                   android:paddingRight="5dp"
+                   android:drawableRight="@drawable/copy_icon"
+                   android:layout_gravity="center|right"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_below="@+id/toolbars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:typeface="serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Create Account"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+                <!-- Name Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <EditText android:id="@+id/input_name"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:inputType="textPersonName"
+                        android:drawableLeft="@drawable/user_icon"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:hint="  Name" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                <!-- Address Label -->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <EditText android:id="@+id/input_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+
+                        android:padding="10dp"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:inputType="textPostalAddress"
+                        android:drawableTint="@color/yellow"
+                        android:drawableLeft="@drawable/location_icon"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/yellow"
+                        android:hint="  Address" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--  Email Label -->
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <EditText android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:gravity="center|left"
+                        android:drawableTint="@color/white"
+                        android:layout_gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:drawableLeft="@drawable/email_icon"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:hint="  Email" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!-- mobile number -->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <EditText android:id="@+id/input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+android:maxLength="10"
+                        android:inputType="number"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:drawableTint="@color/white"
+                        android:drawableLeft="@drawable/phone_icon"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:hint="  Mobile Number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Password Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+              android:visibility="gone"      android:background="@drawable/rectangle"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp">
+                    <EditText android:id="@+id/input_passwords"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:textColorHint="@color/white"
+                        android:drawableTint="@color/white"
+                        android:layout_width="match_parent"
+                        android:inputType="textPassword"
+                        android:hint=" Password"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <EditText android:id="@+id/input_reEnterPasswords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:padding="10dp"
+                        android:gravity="center|left"
+                        android:layout_gravity="center"
+                        android:inputType="textPassword"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:textColor="@color/grey"
+                        android:textColorHint="@color/yellow"
+                        android:hint="  Re-enter Password" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:typeface="serif"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/oval"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/update"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Update Profile"/>
+
+                 <TextView
+
+                    android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                     android:layout_height="wrap_content"
+                   android:textSize="18dp"
+                     android:textStyle="bold"
+                     android:gravity="center"
+                    android:text="Want to update password ?"/>
+                <TextView
+                    android:id="@+id/tv_updatePsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Update password"/>
+
+            </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/xx"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:weightSum="5"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Date:"
+            android:layout_weight="4"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:id="@+id/date"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:id="@+id/edit_number"
+            android:layout_height="match_parent"
+            android:src="@drawable/edit"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:id="@+id/del_number"
+            android:layout_height="match_parent"
+            android:src="@drawable/del"/>
+    </LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_below="@+id/xx"
+    android:id="@+id/lll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Phone Number "
+            android:textSize="12dp"
+            android:id="@+id/phone"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Vehicle Number "
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:id="@+id/vehicle_num"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Vehicle Number "
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:id="@+id/vehicle_type"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/user_nav_Home"
+            android:icon="@drawable/area_icon"
+            android:title="Home Service" />
+        <item
+            android:id="@+id/user_nav_Profile"
+            android:icon="@drawable/person_icon"
+            android:title="Profile" />
+      <!--  <item
+            android:id="@+id/user_UpdatePsd"
+          android:iconTint="@color/colorPrimary"
+            android:icon="@drawable/password_icon"
+            android:title="Update Password" />-->
+        <item
+            android:id="@+id/user_nav_feedback"
+            android:icon="@drawable/id_icon"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/user_nav_history"
+            android:icon="@drawable/id_icon"
+            android:title="Service History" />
+        <item
+            android:id="@+id/user_view_notification"
+            android:icon="@drawable/notification"
+            android:title="View Notification" />
+
+        <item
+            android:id="@+id/user_Vendor_SignUp"
+            android:icon="@drawable/vendor"
+            android:title="Vendor Sign up" />
+        <item
+            android:id="@+id/user_follow_on_social"
+            android:icon="@drawable/follow_us"
+            android:title="Follow Us" />
+
+        <item
+            android:id="@+id/user_social_share"
+            android:icon="@drawable/share"
+            android:title="Share App" />
+
+
+
+
+        <item
+            android:id="@+id/user_contactUs"
+            android:icon="@drawable/red_phone_icon"
+            android:title="Contact Us" />
+        <item
+                android:id="@+id/user_nav_logout"
+                android:icon="@drawable/service_icons"
+                android:title="Logout" />
+
+</group>
+</menu>

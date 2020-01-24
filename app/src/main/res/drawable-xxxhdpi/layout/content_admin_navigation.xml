@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="indiawebwide.com.vehicleapp.AdminNavigation"
+    tools:showIn="@layout/app_bar_admin_navigation">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="REGISTERED VEHICLE"
+        android:textStyle="bold"
+        android:id="@+id/tte"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        android:gravity="center|bottom"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight="2"/>
+    <View
+        android:layout_below="@+id/tte"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/vve"></View>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:weightSum="2"
+    android:id="@+id/calender"
+    android:layout_below="@+id/vve"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_height="40dp">
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_width="220dp"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="DATE"
+
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center|right"
+        android:textColor="@color/black"
+        android:layout_weight="2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:hint="  Search by date"
+        android:textColorHint="@color/Grey"
+        android:id="@+id/to_calender"
+        android:drawableRight="@drawable/calendericon"
+        android:background="@drawable/rectangle"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_width="180dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TO"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                android:gravity="center|right"
+                android:textColor="@color/black"
+                android:layout_weight="2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:id="@+id/from_calender"
+                android:drawableRight="@drawable/calendericon"
+                android:background="@drawable/rectangle"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/calender"
+        android:layout_width="match_parent"
+        android:id="@+id/radio"
+        android:layout_height="50dp">
+    <RadioGroup
+        android:layout_width="250dp"
+        android:weightSum="2"
+        android:id="@+id/radiogroup"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <RadioButton
+            android:layout_width="120dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/car_unselected"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/carlicon"/>
+        <RadioButton
+            android:layout_width="120dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:id="@+id/car_selected"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/carliconselected"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:id="@+id/bike_unselected"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/bikelicon"/>
+        <RadioButton
+            android:layout_width="120dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/bike_selected"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:checked="true"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/bikeliconselected"/>
+    </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="EXPORT"
+            android:visibility="gone"
+            android:background="@color/Green"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/export"
+            android:padding="5dp"
+            android:drawableRight="@drawable/export_icon"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:layout_height="40dp" />
+</LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:background="@color/Grey"
+        android:layout_below="@+id/radio"
+        android:id="@+id/tabs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Vehicle Number"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Phone Number"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Vehicle Type"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:layout_height="40dp" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:dividerHeight="1dp"
+        android:id="@+id/list_admin"
+        android:divider="@color/Grey">
+    </ListView>
+</RelativeLayout>

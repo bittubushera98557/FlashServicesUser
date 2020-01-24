@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true"
+    tools:context="com.FlashScreen.flashservice.InnnerClass.NavigationScreen">
+
+
+    <include layout="@layout/screen" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/call_now"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        app:backgroundTint="@color/Green"
+        android:clickable="true"
+        android:elevation="@dimen/design_fab_elevation"
+        android:src="@drawable/phone"
+        app:borderWidth="0dp" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

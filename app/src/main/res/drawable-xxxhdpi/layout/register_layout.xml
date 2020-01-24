@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cardetailbg"
+    tools:context="indiawebwide.com.vehicleapp.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:layout_height="40dp">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinner"
+                android:layout_height="40dp">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:weightSum="5"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/ic_person"/>
+            <EditText
+                android:hint="Name"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:id="@+id/reg_name"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/phone"/>
+            <EditText
+                android:hint="Phone Number"
+                android:textSize="15dp"
+                android:maxLength="10"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:id="@+id/reg_num"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/noplateicon"/>
+            <EditText
+                android:hint="Vehicle Number"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:id="@+id/veh_num"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5.5"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:layout_weight="2.5"
+                android:src="@drawable/lock"/>
+            <EditText
+                android:hint="Set Password"
+                android:textSize="15dp"
+                android:layout_weight=".5"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:id="@+id/reg_pass"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/show_passd"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:src="@drawable/show_password"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/hide_passd"
+                android:layout_weight="2.5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:src="@drawable/show_pass_on"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/reg_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5"
+            />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:id="@+id/already"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E5E5E5"
+            android:text="Account Already  Exit"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

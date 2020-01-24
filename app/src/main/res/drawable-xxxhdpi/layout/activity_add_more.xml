@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/cardetailbg"
+    tools:context="indiawebwide.com.vehicleapp.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Add Vehicle"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:layout_height="40dp">
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinner_veh"
+                android:layout_height="40dp">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/phone"/>
+            <EditText
+                android:hint="Phone Number"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:inputType="number"
+                android:id="@+id/reg_veh_ph"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="5"
+            android:background="@drawable/box"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/noplateicon"/>
+            <EditText
+                android:hint="Vehicle Number"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:id="@+id/reg_veh_num"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_veh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD VEHICLE"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/button"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

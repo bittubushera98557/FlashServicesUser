@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/tabs"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Vehicle Number"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:id="@+id/v_num" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Phone Number"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:layout_height="40dp"
+            android:id="@+id/v_phone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Vehicle Type"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="5dp"
+            android:layout_height="40dp"
+            android:id="@+id/v_type" />
+    </LinearLayout>
+</LinearLayout>
